@@ -10,6 +10,10 @@
   margin-right: auto;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 
 
 /* header */
@@ -22,7 +26,6 @@ header nav {
   justify-content: space-between;
 
 }
-
 
 header nav ul {
   display: flex;
@@ -53,3 +56,56 @@ header nav #nav-center img {
   height: 20px;
 
 }
+/* /header */
+
+
+
+
+/* main */
+main {
+  padding: 36px;
+}
+
+main .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+main .row .card {
+  
+  width: calc(100% / 3 - 10px);
+  height: auto;
+  
+  margin-bottom: 2em;
+}
+
+
+main .row .card img {
+  width: 100%;
+  height: auto;
+}
+
+
+main .row .card .text-container .card-brand {
+  font-size: 0.8em;
+}
+
+main .row .card .text-container .card-title {
+  text-transform: uppercase;
+}
+
+main .row .card .text-container .card-prices {
+  font-size: 0.8em;
+}
+
+main .row .card .text-container .card-prices strong {
+  color: red;
+  margin-right: .4em;
+}
+
+main .row .card .text-container .card-prices span {
+  text-decoration: line-through;
+}
+/* /main */
