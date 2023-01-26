@@ -12,13 +12,25 @@
 
 body {
   font-family: sans-serif;
+
+  padding-top: 100px;
 }
 
 
 
 /* header */
 header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+
+  width: 100%;
+
   background-color: #ff6900;
+
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, .3);
+
 }
 
 header nav {
