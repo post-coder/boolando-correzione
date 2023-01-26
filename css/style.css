@@ -82,7 +82,53 @@ main .row .card {
 }
 
 
-main .row .card img {
+main .row .card .images-container {
+  position: relative;
+}
+
+/* elementi absolute */
+main .row .card .images-container .heart-icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+
+  width: 1.2em;
+  height: 1.2em;
+
+  font-size: 1.5em;
+
+  background-color: white;
+
+  text-align: center;
+}
+
+main .row .card .images-container .tags-container {
+  display: flex;
+  gap: 5px;
+
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+
+main .row .card .images-container .tags-container > div {
+  padding: 4px 8px;
+
+  color: white;
+
+  font-size: .8em;
+}
+
+main .row .card .images-container .tags-container .tag-discount {
+  background-color: red;
+}
+main .row .card .images-container .tags-container .tag-category {
+  background-color: green;
+}
+/* /elementi absolute */
+
+
+main .row .card .images-container img {
   width: 100%;
   height: auto;
 }
@@ -108,4 +154,7 @@ main .row .card .text-container .card-prices strong {
 main .row .card .text-container .card-prices span {
   text-decoration: line-through;
 }
+
+
+
 /* /main */
